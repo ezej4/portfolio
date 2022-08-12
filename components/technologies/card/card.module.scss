@@ -1,0 +1,51 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.card {
+  width: 60px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  background: #1d9b9e;
+  border-radius: 5px;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    width: 40px;
+    height: 30px;
+    path {
+      fill: #272932;
+    }
+  }
+  &__footer {
+    padding: 4px 2px;
+    font-weight: bold;
+    text-align: center;
+    background: #272932;
+    font-size: $mobile-description-size - 3px;
+    color: #e6ebee;
+    text-transform: capitalize;
+    border-radius: 3px;
+  }
+}
+
+@include for-desktop {
+  .card {
+    width: 125px;
+    height: 170px;
+    &__icon {
+      width: 80px;
+      height: 70px;
+    }
+
+    &__footer {
+      font-size: $desktop-description-size;
+    }
+  }
+}

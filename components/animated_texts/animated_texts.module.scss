@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+.main {
+  min-height: 40px;
+  width: 100%;
+  animation: fadeIn 4.5s ease;
+}
+
+.container {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  filter: url(#threshold) blur(0.7px);
+}
+
+.text1,
+.text2 {
+  position: absolute;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: $mobile-subtitle-size;
+  text-align: center;
+  user-select: none;
+}
+
+.filters {
+  display: none;
+  position: relative;
+}
+
+@include for-desktop {
+  .main {
+    min-height: 200px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: $desktop-subtitle-size;
+  }
+}

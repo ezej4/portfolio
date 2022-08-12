@@ -1,0 +1,113 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.projects {
+  position: relative;
+  color: var(--text);
+  width: 100%;
+  background: url("../../public/assets/images/projects.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg);
+
+  &__filter {
+    width: 100%;
+    height: 100%;
+  }
+  &__filter_op {
+    position: absolute;
+    width: 100%;
+    background: var(--bg);
+    opacity: 0.5;
+  }
+
+  &,
+  &__content,
+  &__filter_op {
+    min-height: calc(100vh - $mobile-header-height);
+  }
+
+  &__content {
+    opacity: 0;
+    position: relative;
+    max-width: $mobile-max-content;
+    color: var(--text);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 100px;
+    font-size: $mobile-title-section-size;
+    text-align: center;
+  }
+
+  &__cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__carousel {
+    position: relative;
+    width: 100%;
+
+    &_dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 24px;
+      left: calc(50% - 24px);
+      display: flex;
+      justify-content: center;
+
+      button {
+        border-radius: 50%;
+        margin-left: 4px;
+        padding: 7px;
+        border: none;
+      }
+     
+    }
+  }
+}
+
+@include for-desktop {
+  .projects {
+    background-position: center;
+
+    &__content {
+      max-width: $desktop-max-content;
+    }
+
+    &,
+    &__content,
+    &__filter_op {
+      min-height: calc(100vh - $desktop-header-height);
+    }
+    &__title {
+      font-size: $desktop-subtitle-size;
+    }
+
+    &__carousel {
+      width: 850px;
+      height: 550px;
+
+      &_dots {
+        position: absolute;
+        bottom: 75px;
+        left: calc(50% - 24px);
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

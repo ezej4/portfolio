@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+.country_combo {
+  button {
+    padding: 4px;
+    border: none;
+  }
+  button::after {
+    border-top: 5px solid var(--bg);
+  }
+  span {
+    font-family: inika, -apple-system;
+    color: var(--bg);
+    padding: 1px;
+    margin: 0%;
+  }
+}
+

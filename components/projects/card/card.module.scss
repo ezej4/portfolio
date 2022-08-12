@@ -1,0 +1,113 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.card {
+  width: 260px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 12px;
+  background: rgba(var(--bg_hex), 0.47);
+  box-shadow: 0px 4px 4px #000000;
+  border-radius: 5px;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image_container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7ecef;
+    border-radius: 50%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 12px;
+    font-size: $mobile-title-section-size - 2px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    margin-top: 12px;
+    font-size: $mobile-description-size;
+  }
+
+  &__button {
+    width: fit-content;
+    padding: 6px 16px;
+    background: $cta;
+    color: var(--text);
+    border-radius: 5px;
+    margin: 14px 0 10px;
+    border: none;
+    font-size: $mobile-description-size;
+    font-family: inherit;
+    font-weight: bold;
+  }
+}
+
+@include for-desktop {
+  .card {
+    width: 815px;
+    flex-direction: row;
+    padding: 100px 40px 68px;
+
+    &__image_container {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__texts {
+      margin-left: 60px;
+    }
+
+    &__body {
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-top: 12px;
+      font-size: $desktop-subtitle-size;
+      font-weight: bold;
+    }
+
+    &__desc {
+      margin-top: 22px;
+      font-size: $desktop-description-size;
+    }
+
+    &__button {
+      width: fit-content;
+      padding: 14px 32px;
+      font-size: $desktop-description-size;
+
+      transition: 0.5s ease all;
+
+      &:hover {
+        background: var(--text);
+        color: var(--bg);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}

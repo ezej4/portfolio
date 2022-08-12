@@ -1,0 +1,120 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.fake_button {
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+.chevron {
+  $chevron_size: 40px;
+
+  &__icon {
+    pointer-events: none;
+    position: fixed;
+    margin: auto 0;
+    z-index: 100;
+    padding: 4px;
+    border-radius: 50%;
+    width: $chevron_size;
+    height: $chevron_size;
+    transform: translateX(-400px);
+    opacity: 0;
+
+    &__hide {
+      transform: translateX(-400px);
+    }
+
+    &__show {
+      transition: 0.5s ease all;
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &__animate {
+      /*  @keyframes levitate {
+        0% {
+          transform: translateY(0px);
+        }
+        25% {
+          transform: translateY(5px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      animation: levitate 5s 3s infinite; */
+    }
+
+    path {
+      fill: var(--text);
+      pointer-events: auto;
+    }
+  }
+
+  &__chevron_up,
+  &__chevron_down {
+    left: calc(50% - $chevron_size/2);
+  }
+  &__chevron_up {
+    top: $mobile-header-height + 15px;
+  }
+
+  &__chevron_down {
+    bottom: 15px;
+  }
+}
+
+@include for-desktop {
+  $chevron_size: 70px;
+
+  .chevron {
+    &__icon {
+      width: $chevron_size;
+      height: $chevron_size;
+
+      &:hover {
+        cursor: pointer;
+        path {
+          fill: $cta;
+        }
+      }
+
+      &__animate {
+        /*   @keyframes levitate {
+          0% {
+            transform: translateY(0px);
+          }
+          25% {
+            transform: translateY(10px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        animation: levitate 5s 3s infinite; */
+      }
+    }
+
+    &__chevron_up,
+    &__chevron_down {
+      left: max(15px, calc(((100vw - 1280px) / 2 + 15px)));
+    }
+
+    &__chevron_up {
+      top: $desktop-header-height + 28px;
+    }
+
+    &__chevron_down {
+      bottom: 24px;
+    }
+  }
+}

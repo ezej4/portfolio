@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.theme_switch {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s ease all;
+  display: block;
+
+  path {
+    transition: 0.5s ease all;
+    fill: var(--bg);
+  }
+}
+
+.button_hide {
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+
+@include for-desktop {
+  .theme_switch {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+
+      path {
+        fill: var(--text);
+      }
+    }
+  }
+}

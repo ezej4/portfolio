@@ -1,0 +1,72 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.job {
+  color: var(--text);
+
+  &__header {
+    display: flex;
+  }
+
+  &__image_container {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    max-width: calc(100% - 80px);
+    margin-left: 12px;
+  }
+
+  &__title {
+    font-size: $mobile-title-section-size - 2px;
+  }
+  &__subtitle {
+    font-size: $mobile-description-size - 1px;
+  }
+
+  &__desc {
+    margin-top: 8px;
+    font-size: $mobile-description-size - 1px;
+  }
+}
+
+@include for-desktop {
+  .job {
+    &__header {
+      align-items: center;
+    }
+
+    &__image_container {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__titles {
+      margin-left: 24px;
+      max-width: calc(100% - 130px);
+    }
+
+    &__title {
+      font-size: $desktop-subtitle-size;
+    }
+    &__subtitle {
+      font-size: $desktop-description-size;
+    }
+
+    &__desc {
+      margin-top: 14px;
+      font-size: $desktop-description-size;
+      max-width: 400px;
+    }
+  }
+}

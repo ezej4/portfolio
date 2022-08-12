@@ -1,0 +1,98 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins";
+
+.work_experience {
+  position: relative;
+  background-color: var(--bg);
+  color: var(--text);
+  width: 100%;
+
+  &,
+  &__content {
+    min-height: calc(100vh - 70px);
+  }
+
+  &__content {
+    // animation should change this with foward property
+    opacity: 0;
+    position: relative;
+    max-width: $mobile-max-content;
+    color: var(--text);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__jobs_line {
+    position: absolute;
+    left: 50px;
+    height: calc(90% - 100px);
+    max-height: 600px;
+    margin-top: 100px;
+    border-left: 3px dashed var(--text);
+  }
+
+  &__case_icon {
+    position: absolute;
+    margin-top: 56px;
+    left: 24px;
+    width: 56px;
+    height: 48px;
+    path {
+      fill: var(--text);
+    }
+  }
+
+  &__jobs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-left: 75px;
+    margin-top: 120px;
+  }
+}
+
+@include for-desktop {
+  .work_experience {
+    &,
+    &__content {
+      min-height: calc(100vh - 100px);
+    }
+
+    &__content {
+      max-width: $desktop-max-content;
+    }
+    &__jobs_line {
+      left: auto;
+      position: absolute;
+      margin: 100px 0;
+      height: calc(90% - 100px);
+      max-height: none;
+    }
+
+    &__case_icon {
+      margin-top: 75px;
+      left: auto;
+      width: 110px;
+      height: 92px;
+    }
+
+    &__jobs {
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-left: 0;
+      gap: 0px 40px;
+      margin: 220px 0 100px;
+
+      div:nth-child(even) {
+        grid-column: 3/5;
+      }
+
+      div:nth-child(odd) {
+        grid-column: 1/4;
+      }
+    }
+  }
+}

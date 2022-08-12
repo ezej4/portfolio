@@ -1,0 +1,41 @@
+{
+  "nav_bar": {
+    "header": "Home",
+    "about_me": "About me",
+    "technologies": "Technologies",
+    "work_experience": "Work experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "header": {},
+  "about_me": {
+    "first": "Hi, Welcome 👋",
+    "second": "I'm Ezequiel, but my friends calls me 'Eze',",
+    "third": "I'm from Argentina.",
+    "fourth": "I'm pasionate with all related to technology, I have been working on IT since 2017 principally as javascript developer.",
+    "fith": "In my free time i like to play footbal ⚽ and wach movies 🎥."
+  },
+  "technologies": { "title": "Some technologies that i used before" },
+  "work_experience": {
+    "yalo_subtitle": "Frontend Developer",
+    "yalo_desc": "Frontend developer / Backend developer",
+    "ml_subtitle": "Desarollador Frontend / Desarollador Backend",
+    "ml_desc_1": "Development of landings for Mercado Pago users",
+    "ml_desc_2": "Creation and mantaince of components libraries",
+    "ml_desc_3": "Building new Apis with the BBF pattern (backend for frontend)",
+    "unvime_subtitle": "Fullstack Developer",
+    "unvime_desc_1": "Development of new aplications for the students of the university BE/FE",
+    "unvime_desc_2": "Creation of sql reports."
+  },
+  "projects": {
+    "title": "Somes funny project that i made",
+    "crypto_resume_title": "Crypto Resume",
+    "crypto_resume_desc": "Small extension for cheking the price of your favorite cryptos",
+    "crypto_resume_cta": "Review",
+    "rubik_cube_title": "Rubik's Cube",
+    "rubik_cube_desc": "Demo of the famous Rubik's cube, based on the doodle of Google.",
+    "rubik_cube_cta": "Review"
+
+  },
+  "contact": { "title_1": "Thanks for waching", "title_2": "I hope we stay in contact!", "subtitle": "Find me on linkedin or sendme an email" }
+}
