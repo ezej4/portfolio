@@ -2,7 +2,7 @@ import getWordings from "../wordings";
 import constants from "../constants";
 
 const AUTHOR = "Ezequiel Fabbroni";
-const HOST = process.env.BASE_URL;
+const HOST = "https://portfolio-ezej4.vercel.app";
 
 const getdata = (lan, isMobile) => {
   const wordings = getWordings(lan) || getWordings("GB");
