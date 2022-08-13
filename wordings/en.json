@@ -13,7 +13,7 @@
     "second": "I'm Ezequiel, but my friends call me 'Eze',",
     "third": "I'm from Argentina.",
     "fourth": "I'm fascinated with all related to technology, I have been working on IT since 2017 principally as javascript developer.",
-    "fith": "In my free time i like to play football ⚽ and watch movies 🎥."
+    "fith": "In my free time, I like to play football ⚽ and watch movies 🎥."
   },
   "technologies": { "title": "My preferred tools" },
   "work_experience": {
@@ -21,8 +21,8 @@
     "yalo_desc": "Frontend developer / Backend developer",
     "ml_subtitle": "Software engineer (FE/BE)",
     "ml_desc_1": "Development of landings for Mercado Pago users",
-    "ml_desc_2": "Creation and maintenance of components libraries",
-    "ml_desc_3": "Building new Apis with the BBF pattern (backend for frontend)",
+    "ml_desc_2": "Creation and maintain of components libraries",
+    "ml_desc_3": "Building new APIs with the BBF pattern (backend for frontend)",
     "unvime_subtitle": "Fullstack Developer",
     "unvime_desc_1": "Development of new applications for the students of the university BE/FE",
     "unvime_desc_2": "Creation of sql reports."
