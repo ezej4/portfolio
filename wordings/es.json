@@ -2,7 +2,7 @@
   "nav_bar": {
     "header": "Inicio",
     "about_me": "Sobre mí",
-    "technologies": "Tecnologias",
+    "technologies": "Tecnologías",
     "work_experience": "Experiencia laboral",
     "projects": "Proyectos",
     "contact": "Contacto"
@@ -12,30 +12,30 @@
     "first": "Hola, Bienvenido! 👋",
     "second": "Me llamo Ezequiel, pero mis amigos me dicen 'Eze' ",
     "third": "Soy de Argentina",
-    "fourth": "Me apasiona todo lo relacionado a la técnologia, he estado trabajando en IT desde el 2017 principalmente como desarrollador javascript",
-    "fith": "En mis tiempos libre me gusta jugar al futbol ⚽ y mirar peliculas 🎥."
+    "fourth": "Me apasiona todo lo relacionado con la tecnología, he estado trabajando en IT desde el 2017 principalmente como desarrollador javascript",
+    "fith": "En mis tiempos libres me gusta jugar al futbol ⚽ y mirar películas."
   },
-  "technologies": { "title": "Tecnologías que he usado anteriormente" },
+  "technologies": { "title": "Mis herramientas preferidas" },
   "work_experience": {
     "yalo_subtitle": "Desarollador Frontend",
     "yalo_desc": "Desarrollo de nuevas funcionalidades para las webviews de la empresa",
-    "ml_subtitle": "Desarollador Frontend / Desarollador Backend",
+    "ml_subtitle": "Ingeniero de software (BE/FE)",
     "ml_desc_1": "Desarrollo de landings para los usuarios de Mercado Pago",
-    "ml_desc_2": "Creación y mantenimiento de librerias de componentes",
+    "ml_desc_2": "Creación y mantenimiento de librerías de componentes",
     "ml_desc_3": "Construir nuevas APIS con el patron BFF (Backend for Frontend)",
     "unvime_subtitle": "Desarrollador Fullstack",
-    "unvime_desc_1": "Desarollo de nuevas aplicación para los estudiantes de la universidad BE/FE",
+    "unvime_desc_1": "Desarrollo de nuevas aplicaciones para los estudiantes de la universidad BE/FE",
     "unvime_desc_2": "Creación de nuevos reportes sql"
   },
   "projects": {
-    "title": "Algunos projectos divertidos que he realizado",
+    "title": "Algunos proyectos divertidos que he realizado",
     "crypto_resume_title": "Crypto Resumen",
     "crypto_resume_desc": "Simple extesión de Chrome para visualizar el precio de tus criptomonedas preferidas",
     "crypto_resume_cta": "Ver",
-    "rubik_cube_title": "Rubik's Cube",
+    "rubik_cube_title": "Cubo de Rubik",
     "rubik_cube_desc": "Demo del famoso cubo de Rubik basado en doodle de Google",
     "rubik_cube_cta": "Ver"
 
   },
-  "contact": { "title_1": "Gracias por ver esta página", "title_2": "Espero que estames en contacto!", "subtitle": "Encuentrame en Linkedin o enviame un Email" }
+  "contact": { "title_1": "Gracias por ver esta página", "title_2": "Espero que estames en contacto!", "subtitle": "Encuéntrame en LinkedIn o envíame un Email" }
 }
