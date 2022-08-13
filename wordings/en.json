@@ -28,7 +28,7 @@
     "unvime_desc_2": "Creation of sql reports."
   },
   "projects": {
-    "title": "Somes funny project that i made",
+    "title": "Some funny project that I made",
     "crypto_resume_title": "Crypto Resume",
     "crypto_resume_desc": "Small extension for checking the price of your favorite cryptos",
     "crypto_resume_cta": "Review",
@@ -37,5 +37,5 @@
     "rubik_cube_cta": "Review"
 
   },
-  "contact": { "title_1": "Thanks for waching", "title_2": "I hope we stay in contact!", "subtitle": "Find me on LinkedIn or send me an email" }
+  "contact": { "title_1": "Thanks for watching", "title_2": "I hope we stay in contact!", "subtitle": "Find me on LinkedIn or send me an email" }
 }
