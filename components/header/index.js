@@ -17,7 +17,15 @@ const MainHeader = ({ title, subtitles, image }) => {
       <div className={styles.header__content}>
         <div className={styles.header__body}>
           <div className={styles.header__image_container}>
-            <Image width={image.width} height={image.height} className={styles.header__image} src={image.src} alt={image.alt} />
+            <Image
+              width={image.width}
+              height={image.height}
+              placeholder="blur"
+              blurDataURL={image.blurDataUrl}
+              className={styles.header__image}
+              src={image.src}
+              alt={image.alt}
+            />
           </div>
           <div className={styles.header__text_container}>
             <h3 className={styles.header__title}>{title}</h3>

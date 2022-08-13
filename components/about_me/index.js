@@ -15,6 +15,8 @@ const AboutMe = ({ text, image, inView }) => {
             width={image.width}
             height={image.height}
             src={image.src}
+            placeholder="blur"
+            blurDataURL={image.blurDataUrl}
             alt={image.alt}
             className={styles.about_me__image}
           />

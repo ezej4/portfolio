@@ -15,8 +15,15 @@ const WorkExperience = ({ jobs, inView }) => {
         <Icon name={"case"} className={styles.work_experience__case_icon} />
         <div className={styles.work_experience__jobs}>
           {jobs &&
-            jobs.map(({ title, logo, subtitle, desc }) => (
-              <Job key={title} title={title} image={logo} subtitle={subtitle} content={desc} />
+            jobs.map(({ title, logo, subtitle, desc, blurDataUrl }) => (
+              <Job
+                key={title}
+                title={title}
+                image={logo}
+                blurDataUrl={blurDataUrl}
+                subtitle={subtitle}
+                content={desc}
+              />
             ))}
         </div>
       </div>

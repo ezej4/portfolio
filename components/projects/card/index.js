@@ -9,6 +9,8 @@ const Card = ({ image, title, desc, cta, href }) => {
           <Image
             className={styles.card__image}
             src={image.src}
+            placeholder="blur"
+            blurDataURL={image.blurDataUrl}
             width={image.width}
             height={image.height}
             alt={title}
