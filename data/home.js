@@ -143,7 +143,7 @@ const getdata = (lan, isMobile) => {
             width: isMobile ? "60" : "180",
             height: isMobile ? "60" : "160",
           },
-          href: "https://rubik-d01c0.firebaseapp.com/",
+          href: "https://demo-rubik-cube.ezequielfabbroni.com/",
         },
 
         {
