@@ -2,7 +2,7 @@ import getWordings from "../wordings";
 import constants from "../constants";
 
 const AUTHOR = "Ezequiel Fabbroni";
-const HOST = process.env.NEXT_PUBLIC_HOST;
+const HOST = process.env.BASE_URL;
 
 const getdata = (lan, isMobile) => {
   const wordings = getWordings(lan) || getWordings("GB");

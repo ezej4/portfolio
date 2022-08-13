@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost']
+    domains: ["localhost"],
+  },
+  env: {
+    BASE_URL: process.env.NEXT_PUBLIC_HOST,
   },
 };
 
