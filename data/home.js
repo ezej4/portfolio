@@ -44,11 +44,11 @@ const getdata = (lan, isMobile) => {
     header: {
       title: AUTHOR,
       subtitles: [
-        "<software_engenieer />",
-        "<javascript_developer />",
+        "<Software_engenieer />",
+        "<Javascript_developer />",
         "<Fullstack_developer />",
-        "<react_developer />",
-        "<node_developer />",
+        "<React_developer />",
+        "${Node_developer}",
       ],
       image: {
         src: `${HOST}/assets/images/profile_photo.jpg`,

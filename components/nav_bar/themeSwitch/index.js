@@ -14,7 +14,7 @@ const ThemeSwitch = () => {
   };
 
   return (
-    <button className={styles.button_hide}  onClick={handleThemeChange}>
+    <button className={styles.button_hide} aria-label="theme-switch"  onClick={handleThemeChange}>
       <Icon name={"themeSwitch"} className={styles.theme_switch} />
     </button>
   );

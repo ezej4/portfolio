@@ -15,10 +15,10 @@
     "fourth": "I'm fascinated with all related to technology, I have been working on IT since 2017 principally as javascript developer.",
     "fith": "In my free time, I like to play football ⚽ and watch movies 🎥."
   },
-  "technologies": { "title": "My preferred tools" },
+  "technologies": { "title": "My favorite tools" },
   "work_experience": {
     "yalo_subtitle": "Frontend Developer",
-    "yalo_desc": "Frontend developer / Backend developer",
+    "yalo_desc": "Frontend developer",
     "ml_subtitle": "Software engineer (FE/BE)",
     "ml_desc_1": "Development of landings for Mercado Pago users",
     "ml_desc_2": "Creation and maintain of components libraries",
@@ -28,7 +28,7 @@
     "unvime_desc_2": "Creation of sql reports."
   },
   "projects": {
-    "title": "Some funny project that I made",
+    "title": "Some funny projects that I made",
     "crypto_resume_title": "Crypto Resume",
     "crypto_resume_desc": "Small extension for checking the price of your favorite cryptos",
     "crypto_resume_cta": "Review",

@@ -16,7 +16,13 @@ const Contact = ({ titles, subtitle, icons, inView }) => {
         <div className={styles.contact__icons}>
           {icons &&
             icons.map((icon) => (
-              <a key={icon.name} href={icon.href} target="_blank" rel="noreferrer">
+              <a
+                key={icon.name}
+                href={icon.href}
+                aria-label={icon.name}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Icon name={icon.name} className={styles[icon.name]} />
               </a>
             ))}
