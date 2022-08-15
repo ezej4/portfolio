@@ -21,8 +21,9 @@ import Firebase from "./icons/firebase";
 import Case from "./icons/case";
 import Jest from "./icons/jest";
 import Datadog from "./icons/datadog";
-import Linkedin from './icons/linkedin';
-import Gmail from './icons/gmail';
+import Linkedin from "./icons/linkedin";
+import Gmail from "./icons/gmail";
+import Sass from "./icons/sass";
 
 const iconMapper = {
   bulb: Bulb,
@@ -50,6 +51,7 @@ const iconMapper = {
   datadog: Datadog,
   linkedin: Linkedin,
   gmail: Gmail,
+  sass: Sass,
 };
 
 const getIcon = (name, className) => {

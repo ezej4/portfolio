@@ -87,7 +87,7 @@ const getdata = (lan, isMobile) => {
         "node",
         "nextjs",
         "html5",
-        "ccs3",
+        "sass",
         "git",
         "sql",
         "firebase",
