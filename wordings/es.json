@@ -13,7 +13,7 @@
     "second": "Me llamo Ezequiel, pero mis amigos me dicen 'Eze' ",
     "third": "Soy de Argentina",
     "fourth": "Me apasiona todo lo relacionado con la tecnología, he estado trabajando en IT desde el 2017 principalmente como desarrollador javascript",
-    "fith": "En mis tiempos libres me gusta jugar al futbol ⚽ y mirar películas."
+    "fith": "En mis tiempos libres me gusta viajar, jugar al futbol ⚽ con amigos y compartir tiempo con mi gato 😺."
   },
   "technologies": { "title": "Mis herramientas preferidas" },
   "work_experience": {
@@ -37,5 +37,5 @@
     "rubik_cube_cta": "Ver"
 
   },
-  "contact": { "title_1": "Gracias por ver esta página", "title_2": "¡Espero que estamos en contacto!", "subtitle": "Encuéntrame en LinkedIn o envíame un Email" }
+  "contact": { "title_1": "Gracias por ver esta página", "title_2": "¡Espero que estemos en contacto!", "subtitle": "Encuéntrame en LinkedIn o envíame un Email" }
 }
