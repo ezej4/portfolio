@@ -25,6 +25,9 @@
     justify-content: center;
     background: #e7ecef;
     border-radius: 50%;
+    span {
+      border-radius: 20%;
+    }
   }
 
   &__body {

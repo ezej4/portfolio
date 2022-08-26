@@ -49,12 +49,16 @@ $animation_duration: 1s;
 
   &__image_container {
     filter: brightness(80%);
+    span {
+      border-radius: 500px;
+    }
   }
 
   &__image {
     box-sizing: border-box;
     margin: 0 !important;
     border: 6px solid var(--bg) !important;
+   
   }
 
   &__text_container {
