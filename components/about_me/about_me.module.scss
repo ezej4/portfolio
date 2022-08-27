@@ -15,7 +15,6 @@
   &__content {
     // animation should change this with foward property
     opacity: 0;
-
     position: relative;
     max-width: $mobile-max-content;
     font-size: $mobile-description-size;
@@ -24,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
   }
 
   &__icon_container {
@@ -83,6 +83,7 @@
     &__content {
       max-width: $desktop-max-content;
       font-size: 24px;
+      padding-bottom: 0;
     }
 
     &__card {

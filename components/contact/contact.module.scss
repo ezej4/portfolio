@@ -44,30 +44,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 24px;
+    padding-bottom: 12px;
   }
 }
 
 .gmail {
-  width: 110px;
-  height: 110px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   padding: 5px 10px;
   background: var(--te);
 }
 
 .linkedin {
-  width: 110px;
-  height: 110px;
+  width: 70px;
+  height: 70px;
 
   path {
-    fill: #0E76A8;
-
+    fill: #0e76a8;
   }
 }
 
 @include for-desktop {
-
   .contact {
     &,
     &__content {
@@ -95,6 +94,24 @@
     &__icons {
       margin-top: 60px;
       gap: 48px;
+      padding-bottom: 0;
+    }
+  }
+
+  .gmail {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: var(--te);
+  }
+
+  .linkedin {
+    width: 110px;
+    height: 110px;
+
+    path {
+      fill: #0e76a8;
     }
   }
 }
