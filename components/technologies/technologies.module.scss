@@ -62,14 +62,18 @@
     background-position: 250% 58%;
     background-size: 134%;
 
+
+    &__title {
+      font-size: $desktop-subtitle-size;
+    }
+
     &__content {
       max-width: $desktop-max-content;
-      font-size: 24px;
     }
 
     &__cards {
       margin: 95px 0 60px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 24px;
     }
   }

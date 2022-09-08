@@ -33,6 +33,7 @@
   }
 
   &__subtitle {
+    margin-top: 12px;
     font-size: $mobile-title-section-size - 2px;
     font-weight: bold;
     max-width: 200px;
@@ -54,7 +55,7 @@
   height: 70px;
   border-radius: 5px;
   padding: 5px 10px;
-  background: var(--te);
+  background: var(--text);
 }
 
 .linkedin {
@@ -87,6 +88,7 @@
     }
 
     &__subtitle {
+      margin-top: 0;
       font-size: $desktop-subtitle-size - 2px;
       max-width: 350px;
     }
@@ -103,7 +105,7 @@
     height: 110px;
     border-radius: 5px;
     padding: 5px 10px;
-    background: var(--te);
+   
   }
 
   .linkedin {
