@@ -1,10 +1,10 @@
 import styles from "./job.module.scss";
 import Image from "next/image";
 
-const Job = ({ image, blurDataUrl, title, subtitle, content }) => {
+const Job = ({ image, blurDataUrl, title, subtitle, content, className }) => {
   return (
-    <div className={styles.job}>
-      <div className={styles.job__header}>
+    <div className={`${styles.job} ${className}`}>
+      <div className={styles.job__header }>
         <div className={styles.job__image_container}>
           <Image
             layout="fill"

@@ -20,6 +20,7 @@ const WorkExperience = ({ jobs, inView }) => {
                 key={title}
                 title={title}
                 image={logo}
+                className={styles.work_experience__job}
                 blurDataUrl={blurDataUrl}
                 subtitle={subtitle}
                 content={desc}
