@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost" , "portfolio-ezej4.vercel.app", "ezequielfabbroni"],
+    domains: ["localhost" , "portfolio-ezej4.vercel.app", "ezequielfabbroni.com"],
   },
   env: {
     BASE_URL: process.env.NEXT_PUBLIC_HOST,
