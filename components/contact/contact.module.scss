@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins';
 
 .contact {
   background-color: var(--bg);
@@ -55,7 +55,7 @@
   height: 70px;
   border-radius: 5px;
   padding: 5px 10px;
-  background: var(--text);
+  border: 2px solid #0e76a8;
 }
 
 .linkedin {
@@ -105,7 +105,11 @@
     height: 110px;
     border-radius: 5px;
     padding: 5px 10px;
-   
+    transition: 0.5s border ease;
+
+    &:hover {
+      border: 2px solid (var(--text));
+    }
   }
 
   .linkedin {
@@ -113,7 +117,14 @@
     height: 110px;
 
     path {
+      transition: 0.5s ease fill;
       fill: #0e76a8;
+    }
+
+    &:hover {
+      path {
+        fill: var(--text);
+      }
     }
   }
 }

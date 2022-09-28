@@ -1,5 +1,5 @@
-@import "./keyframes";
-@import "./variables";
+@import './keyframes';
+@import './variables';
 
 html,
 body,
@@ -12,8 +12,8 @@ p,
 img {
   padding: 0;
   margin: 0;
-  font-family: roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 div {
@@ -27,7 +27,7 @@ a {
 
 :root {
   --bg: #272932;
-  --text: #E7ECEF;
+  --text: #e7ecef;
 }
 
 * {
@@ -41,7 +41,7 @@ a {
   font-family: roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("../public/assets/fonts/Roboto-Regular.ttf");
+  src: url('../public/assets/fonts/Roboto-Regular.ttf');
   font-display: swap;
 }
 
@@ -49,20 +49,17 @@ a {
   font-family: roboto;
   font-style: normal;
   font-weight: 700;
-  src: url("../public/assets/fonts/Roboto-Bold.ttf");
+  src: url('../public/assets/fonts/Roboto-Bold.ttf');
   font-display: swap;
 }
 
 @font-face {
-  font-family: inika;
+  font-family: arefRuqaaInk;
   font-style: normal;
-  font-weight: 700;
-  src: url("../public/assets/fonts/Inika-Bold.ttf");
+  font-weight: 400;
+  src: url('../public/assets/fonts/ArefRuqaaInk-Regular.ttf');
   font-display: swap;
 }
-
-
-
-.fadeIn { 
+.fadeIn {
   animation: fadeIn 2s ease forwards;
 }

@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 $animation_duration: 1s;
 
@@ -58,7 +58,6 @@ $animation_duration: 1s;
     box-sizing: border-box;
     margin: 0 !important;
     border: 6px solid var(--bg) !important;
-   
   }
 
   &__text_container {
@@ -72,7 +71,10 @@ $animation_duration: 1s;
   &__title {
     margin-top: 24px;
     font-size: $mobile-big-title-size;
-    font-family: inika, roboto, serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;  
+    font-family: 'arefRuqaaInk', 'roboto', sans-serif;
+    color: $highlight;
   }
 
   &__welcome {

@@ -20,15 +20,16 @@
 .text2 {
   position: absolute;
   width: 100%;
-  font-family: "Raleway", sans-serif;
   font-size: $mobile-subtitle-size;
+  color: $highlight;
   text-align: center;
   user-select: none;
 }
 
 .filters {
-  display: none;
   position: relative;
+  margin: auto;
+  width: 100%;
 }
 
 @include for-desktop {
