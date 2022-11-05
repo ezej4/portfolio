@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useContext } from "react";
+import { isMobile as mov } from 'react-device-detect';
 import { InView } from "react-intersection-observer";
 import styles from "../../styles/Home.module.scss";
 import { LanguajeContext } from "../../contexts/languaje";
@@ -62,7 +63,8 @@ const Main = ({ isMobile }) => {
   };
 
   const moveSection = (type, sectionNumber) => {
-    const offSet = isMobile ? 50 : 80;
+    const offSet = mov ? 50 : 80;
+    console.log(mov)
 
     if (typeof sectionNumber === "number") {
       currentSectionIndex.current = sectionNumber;
