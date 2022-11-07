@@ -18,8 +18,6 @@ const MainHeader = ({ title, subtitles, image }) => {
         <div className={styles.header__body}>
           <div className={styles.header__image_container}>
             <Image
-              width={image.width}
-              height={image.height}
               placeholder="blur"
               blurDataURL={image.blurDataUrl}
               className={styles.header__image}

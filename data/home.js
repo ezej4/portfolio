@@ -10,7 +10,7 @@ import cryptoResumeImage from '../public/assets/images/crypto_resume.png';
 
 const AUTHOR = "Ezequiel Fabbroni";
 
-const getdata = (lan, isMobile) => {
+const getdata = (lan, ) => {
   const wordings = getWordings(lan) || getWordings("GB");
   const { pageSections } = constants;
 
@@ -61,8 +61,6 @@ const getdata = (lan, isMobile) => {
         alt: AUTHOR,
         blurDataUrl:
           "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwQI/8QAJhAAAQMCBAYDAAAAAAAAAAAAAQIDBAAFBhESIRUiQ0RRcaGywf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAHBEAAQUAAwAAAAAAAAAAAAAAAAEDESExBDJh/9oADAMBAAIRAxEAPwCLEeITa5qGY6VaQpMkkKyAOkJO3nk+aBhZSfRnKoaYkxqRDYeQtOlxtKx6IzqiAJM44rJ4qvfoD9qXj9R3tHCxkiwW7ftm/qKtTCNdP//Z",
-        width: isMobile ? "200" : "300",
-        height: isMobile ? "200" : "300",
       },
     },
     about_me: {
@@ -80,8 +78,6 @@ const getdata = (lan, isMobile) => {
         blurDataUrl:
           "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUEBAUEAwUFBAUGBgUGCA4JCAcHCBEMDQoOFBEVFBMRExMWGB8bFhceFxMTGyUcHiAhIyMjFRomKSYiKR8iIyL/2wBDAQYGBggHCBAJCRAiFhMWIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL/wAARCAAKAAcDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgf/xAAkEAABAwIEBwAAAAAAAAAAAAABAgMEBRMABiFBERQiIzFRYf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBf/EACERAAIBAwMFAAAAAAAAAAAAAAECAAQRQQMFEhMjQlGB/9oADAMBAAIRAxEAPwABUczMw5sprkn7MZVh/skWnE7KPj5w2xaVHcJwYLbcRTqnkpNzb3j5iSaiSX00SYQ84C48CshR6tAdfeCYDkJq6BPTaf/Z",
         alt: AUTHOR,
-        width: isMobile ? 216 : 288,
-        height: isMobile ? 326 : 435,
       },
     },
     technologies: {
@@ -148,8 +144,6 @@ const getdata = (lan, isMobile) => {
             blurDataUrl:
               "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAMAAAA8eE0hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABDlBMVEXo6OjM08zx8fEAAADwKyvgAADv6e9YslgAhgAAggAAfgAAfwAAeQDdAAAAewAAdwAAsQAA/wDcAADbAADX19fo6Oje3t7h4eHO0c7v6+/u6+7r6erp6Ono6enp6+vlnp7PAAAliiVgqGCLu4u10LXO3c/m1dLrcHDuFhbnAAAAeQAAeQAAewAEfAQTiBWnPxrzAADqAADfAQEAeQAAegAAeQAAeAAAewCTKwDxAADtAADgAAAAeAAAegAAewAAewAAfgCdKgDxAADrAADeAAAAegAAfAAAegAAeQAAewCcKQDxAADsAADIAAAAdgAAeAAAewAAegAAfQCYLAD1AAC2AAAAbQAEdQBrPAD////yIGAiAAAAWXRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAsrGgsMTaDKvKSNWAht1NDNz9nYvBZ63uLS5NPeqA5t186/2MDTqgxf0dfU59Laoglf4NnI1cXUawEVTYWs3MRXAwwyK4mHCTUAAAABYktHRFmasvQYAAAAB3RJTUUH5ggNEC0w1AYIEAAAAGtJREFUCNdjYGBkEhEVE2dmYWVgk5CUkpaRlZNXYGBXVFJWUVVT19Bk4NDS1tHV0zcwNGLgNDYxNTO3sLSyZuCysbWzd3B0cnZh4HZ1c/fw9PL28WXg8fMPCAwKDgnlZeDj5xMIC48QFBIGAGl7D1tBJKF3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA4LTEzVDE2OjQ1OjQzKzAwOjAwW7tfTAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0xM1QxNjo0NTo0MyswMDowMCrm5/AAAAAASUVORK5CYII=",
             alt: "Rubik's cube logo",
-            width: isMobile ? "60" : "180",
-            height: isMobile ? "60" : "160",
           },
           href: "https://demo-rubik-cube.ezequielfabbroni.com/",
         },
@@ -163,8 +157,6 @@ const getdata = (lan, isMobile) => {
             blurDataUrl:
               "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABKVBMVEW9uCWAcSZyXiVjTCauoyW5wAZbRCb//x5DJSYHACaDciWsoiWwqCKCdCallSO1nR+4nR6xmiCbjCRgTiiDdSaxnCHEoBqjkiNJNSmmliPBoBuUhia1nR+MfB+3nh43MA0PBgytmiE5KwUAAACUhyW9nx0AAAAAACuZiiW1nB/FnxmvjxgpIQUBAQB9cCeWiCWdjiVAOhENCgJSPgc0JwQAAAAAAAAAAAAAAAAAAAAAAADJoBfToBLXohLRnxPNohfFlBO8jxTOmxO2ihXbpBLYoxPJmBGpfw+zhw+zhxHOmxGxihPRnRF7WgxnSA2Tbgx7XApINwbSohXbpRLZohPXoROqgA4kGwNmTQjWohPcpRLKlxAsIQRtUgk3KQXKoRiTbwxoTgn///9hH3Q3AAAAO3RSTlMAAAAAAAAAAAAAAAAAKqbv/d56DizH+5AIq/dM8oz7qgvR9o5c8KgDYdr8+v7jIFNhkOb27rQMe6VdDlaLkF0AAAABYktHRGIruR08AAAAB3RJTUUH5ggNEC4WLSbeLgAAAHZJREFUCNdjYODl4xcQFBJmZGIQEbW2sbUTE5dgZpC0d3B0cnaRkmZhkHF1c/fw9PKWZWWQc/Xx9fMPCJRXYFAMCg4JDQuPUFJmUFGNdImKjomNU2NQ19DUitfWSUjUZWBj19M3MDQyNjFl4ODk4uYxM7ewtAIAz/sTGxzNWlMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDgtMTNUMTY6NDY6MTgrMDA6MDD6a77RAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA4LTEzVDE2OjQ2OjE4KzAwOjAwizYGbQAAAABJRU5ErkJggg==",
             alt: "Crypto resume logo",
-            width: isMobile ? "60" : "170",
-            height: isMobile ? "60" : "170",
           },
           href: "https://chrome.google.com/webstore/detail/crypto-resume/lkbmhfbogjfljikafcblcgdifgdliapj",
         },

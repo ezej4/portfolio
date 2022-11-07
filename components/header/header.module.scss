@@ -48,7 +48,10 @@ $animation_duration: 1s;
   }
 
   &__image_container {
+    width: 200px;
+    height: 200px;
     filter: brightness(80%);
+
     span {
       border-radius: 500px;
     }
@@ -160,9 +163,10 @@ $animation_duration: 1s;
       bottom: 0;
       min-height: calc(100vh - 105px);
     }
-    &__image_container,
-    &__image {
-      width: 200px;
+    
+    &__image_container{
+      width: 250px;
+      height: 250px;
     }
 
     &__title {
