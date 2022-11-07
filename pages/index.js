@@ -4,20 +4,7 @@ import ThemeProvider from "../contexts/theme/themeProdiver";
 import { LanguajeProvider } from "../contexts/languaje";
 import Main from "../components/main";
 
-export async function getServerSideProps(context) {
-  const UA = context.req.headers["user-agent"];
-  const isMobile = Boolean(
-    UA.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i)
-  );
-
-  return {
-    props: {
-      isMobile,
-    },
-  };
-}
-
-export default function App({ isMobile }) {
+export default function App() {
   return (
       <LanguajeProvider>
         <ThemeProvider>
@@ -37,7 +24,7 @@ export default function App({ isMobile }) {
             </Head>
 
             <main className={styles.main}>
-              <Main isMobile={isMobile} />
+              <Main />
             </main>
           </div>
         </ThemeProvider>
