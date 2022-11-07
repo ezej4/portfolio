@@ -18,17 +18,23 @@
 
   &__image_container {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e7ecef;
-    border-radius: 50%;
+  
     span {
       border-radius: 20%;
     }
   }
+
+  &__image_padding{
+    padding: 20px;
+    background: #e7ecef;
+    border-radius: 50%;
+  }
+
 
   &__body {
     display: flex;
@@ -75,8 +81,14 @@
     padding: 100px 40px 68px;
 
     &__image_container {
-      width: 250px;
-      height: 250px;
+      width: 180px;
+      height: 180px;
+    }
+
+    &__image_padding{
+      display: flex;
+      align-items: center;
+      padding: 30px;
     }
 
     &__texts {

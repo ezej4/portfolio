@@ -1,34 +1,37 @@
-import { useEffect, useRef, useState, useContext } from "react";
-import { InView } from "react-intersection-observer";
-import styles from "../../styles/Home.module.scss";
-import { LanguajeContext } from "../../contexts/languaje";
-import NavBar from "../../components/nav_bar";
-import MainHeader from "../../components/header";
-import AboutMe from "../../components/about_me";
-import Technologies from "../../components/technologies";
-import WorkExperience from "../../components/work_experience";
-import Projects from "../../components/projects";
-import Contact from "../../components/contact";
-import Chevron from "../../components/chevron";
-import constants from "../../constants";
-import getdata from "../../data/home";
+import { useEffect, useRef, useState, useContext } from 'react';
+import { isMobile } from 'react-device-detect';
+import { InView } from 'react-intersection-observer';
+import styles from '../../styles/Home.module.scss';
+import { LanguajeContext } from '../../contexts/languaje';
+import NavBar from '../../components/nav_bar';
+import MainHeader from '../../components/header';
+import AboutMe from '../../components/about_me';
+import Technologies from '../../components/technologies';
+import WorkExperience from '../../components/work_experience';
+import Projects from '../../components/projects';
+import Contact from '../../components/contact';
+import Chevron from '../../components/chevron';
+import constants from '../../constants';
+import getdata from '../../data/home';
 
-const Main = ({ isMobile }) => {
+const Main = () => {
   const { pageSections } = constants;
   const [languaje] = useContext(LanguajeContext);
   const [showUpperButton, setShowUpperButton] = useState(false);
   const [showLowerButton, setShowLowerButton] = useState(true);
-  const [lastSectionInView, setLastSectionInView] = useState(pageSections.header);
+  const [lastSectionInView, setLastSectionInView] = useState(
+    pageSections.header
+  );
   const sectionRefs = useRef([]);
   const currentSectionIndex = useRef(0);
-  const [data, setData] = useState(getdata(languaje, isMobile));
+  const [data, setData] = useState(getdata(languaje));
   const TRESHOLD_PAGES = 0.6;
 
   useEffect(() => {
     if (!languaje) return;
 
-    setData(getdata(languaje, isMobile));
-  }, [languaje, isMobile]);
+    setData(getdata(languaje));
+  }, [languaje]);
 
   useEffect(() => {
     const isHeaderInView = lastSectionInView == pageSections.header;
@@ -64,68 +67,88 @@ const Main = ({ isMobile }) => {
   const moveSection = (type, sectionNumber) => {
     const offSet = isMobile ? 50 : 80;
 
-    if (typeof sectionNumber === "number") {
+    if (typeof sectionNumber === 'number') {
       currentSectionIndex.current = sectionNumber;
     } else {
       currentSectionIndex.current =
-        type === "up" ? currentSectionIndex.current - 1 : currentSectionIndex.current + 1;
+        type === 'up'
+          ? currentSectionIndex.current - 1
+          : currentSectionIndex.current + 1;
     }
 
     const sectionToScroll = sectionRefs.current[currentSectionIndex.current];
-    const y = sectionToScroll.getBoundingClientRect().top + window.pageYOffset - offSet;
+    const y =
+      sectionToScroll.getBoundingClientRect().top + window.pageYOffset - offSet;
 
-    window.scrollTo({ top: y, behavior: "smooth" });
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   return (
     <div className={styles.container}>
-      <NavBar lastSectionInView={lastSectionInView} goToSection={moveSection} {...data.nav_bar} />
+      <NavBar
+        lastSectionInView={lastSectionInView}
+        goToSection={moveSection}
+        {...data.nav_bar}
+      />
       <Chevron
-        type="up"
+        type='up'
         hide={!showUpperButton}
         onClick={() => {
-          moveSection("up");
+          moveSection('up');
         }}
       />
       <Chevron
-        type="down"
+        type='down'
         hide={!showLowerButton}
         onClick={() => {
-          moveSection("down");
+          moveSection('down');
         }}
       />
 
       <main className={styles.main}>
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.header, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.header.index] = el)}>
+          <div
+            ref={(el) => (sectionRefs.current[pageSections.header.index] = el)}
+          >
             <MainHeader {...data.header} />
           </div>
         </InView>
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.about_me, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.about_me.index] = el)}>
-            <AboutMe {...data.about_me} inView={pageSections.about_me === lastSectionInView} />
+          <div
+            ref={(el) =>
+              (sectionRefs.current[pageSections.about_me.index] = el)
+            }
+          >
+            <AboutMe
+              {...data.about_me}
+              inView={pageSections.about_me === lastSectionInView}
+            />
           </div>
         </InView>
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.technologies, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.technologies.index] = el)}>
+          <div
+            ref={(el) =>
+              (sectionRefs.current[pageSections.technologies.index] = el)
+            }
+          >
             <Technologies
               {...data.technologies}
               inView={pageSections.technologies === lastSectionInView}
@@ -134,13 +157,17 @@ const Main = ({ isMobile }) => {
         </InView>
 
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.work_experience, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.work_experience.index] = el)}>
+          <div
+            ref={(el) =>
+              (sectionRefs.current[pageSections.work_experience.index] = el)
+            }
+          >
             <WorkExperience
               {...data.work_experience}
               inView={pageSections.work_experience === lastSectionInView}
@@ -149,13 +176,17 @@ const Main = ({ isMobile }) => {
         </InView>
 
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.projects, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.projects.index] = el)}>
+          <div
+            ref={(el) =>
+              (sectionRefs.current[pageSections.projects.index] = el)
+            }
+          >
             <Projects
               isMobile={isMobile}
               {...data.projects}
@@ -165,14 +196,19 @@ const Main = ({ isMobile }) => {
         </InView>
 
         <InView
-          as="div"
+          as='div'
           onChange={(inView) => {
             handleSectionVisibility(pageSections.contact, inView);
           }}
           threshold={TRESHOLD_PAGES}
         >
-          <div ref={(el) => (sectionRefs.current[pageSections.contact.index] = el)}>
-            <Contact {...data.contact} inView={pageSections.contact === lastSectionInView} />
+          <div
+            ref={(el) => (sectionRefs.current[pageSections.contact.index] = el)}
+          >
+            <Contact
+              {...data.contact}
+              inView={pageSections.contact === lastSectionInView}
+            />
           </div>
         </InView>
       </main>
